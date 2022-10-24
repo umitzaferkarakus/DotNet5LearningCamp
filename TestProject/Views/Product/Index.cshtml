@@ -1,0 +1,16 @@
+﻿@*@model List<TestProject.Models.Products>
+
+<ul>
+    @foreach ( var product in Model)
+    {
+        <li>@product.ProductName</li>
+    }
+</ul>*@
+
+
+<ul>
+    @foreach ( var product in ViewBag.products as List<TestProject.Models.Products>)
+    {
+        <li>@product.ProductName</li>
+    }
+</ul>
